@@ -14,17 +14,17 @@ spec:
     spec:
       containers:
         - name: spring-boot-k8s
-          image: adijaiswal/shopping-kart:latest
+          image: aziz27uk/shopping-cart:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8070
           resources:
             requests:
-              memory: "1Gi" 
-              cpu: "1000m"      
+              memory: "256Mi" 
+              cpu: "250m"      
             limits:
-              memory: "1Gi" 
-              cpu: "1000m"      
+              memory: "512Mi" 
+              cpu: "500m"      
               
 ---
 
